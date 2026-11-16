@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Showcase | Amenawon Wilson Iyegbe</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:
+    radial-gradient(circle at top left,#2563eb 0%,transparent 30%),
+    radial-gradient(circle at bottom right,#06b6d4 0%,transparent 30%),
+    linear-gradient(135deg,#020617,#0f172a,#1e293b);
+
+    color:white;
+    overflow-x:hidden;
+}
+
+body::before,
+body::after{
+    content:'';
+    position:fixed;
+    border-radius:50%;
+    filter:blur(120px);
+    z-index:-1;
+}
+
+body::before{
+    width:400px;
+    height:400px;
+    background:#2563eb;
+    top:-100px;
+    left:-100px;
+}
+
+body::after{
+    width:350px;
+    height:350px;
+    background:#06b6d4;
+    bottom:-100px;
+    right:-100px;
+}
+
+/* Navigation */
+
+header{
+    position:sticky;
+    top:0;
+    z-index:1000;
+    background:rgba(15,23,42,.85);
+    backdrop-filter:blur(12px);
+    border-bottom:1px solid rgba(255,255,255,.1);
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+}
+
+.logo{
+    font-size:1.4rem;
+    font-weight:700;
+    color:#60a5fa;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:25px;
+}
+
+nav a{
+    text-decoration:none;
+    color:white;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#60a5fa;
+}
+
+/* Hero */
+
+.hero{
+    text-align:center;
+    padding:100px 10%;
+}
+
+.hero h1{
+    font-size:4rem;
+    margin-bottom:20px;
+
+    background:linear-gradient(
+    to right,
+    #60a5fa,
+    #22d3ee);
+
+    background-clip:text;
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+.hero p{
+    max-width:950px;
+    margin:auto;
+    line-height:1.9;
+    color:#dbeafe;
+    font-size:1.05rem;
+}
+
+/* Sections */
+
+section{
+    padding:70px 10%;
+}
+
+.section-title{
+    text-align:center;
+    font-size:2.3rem;
+    margin-bottom:40px;
+}
+
+/* Cards */
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:rgba(255,255,255,.08);
+    backdrop-filter:blur(15px);
+    border:1px solid rgba(255,255,255,.1);
+    border-radius:20px;
+    padding:30px;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card h3{
+    color:#60a5fa;
+    margin-bottom:15px;
+}
+
+.card p{
+    color:#dbeafe;
+    line-height:1.9;
+}
+
+/* Buttons */
+
+.btn{
+    display:inline-block;
+    margin-top:20px;
+    padding:14px 30px;
+    text-decoration:none;
+    color:white;
+    border-radius:50px;
+    font-weight:600;
+    background:linear-gradient(
+    90deg,
+    #2563eb,
+    #06b6d4
+    );
+}
+
+.button-group{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+    margin-top:30px;
+}
+
+/* Footer */
+
+footer{
+    text-align:center;
+    padding:40px;
+    border-top:1px solid rgba(255,255,255,.1);
+    color:#cbd5e1;
+}
+
+@media(max-width:768px){
+
+nav{
+    flex-direction:column;
+    gap:15px;
+}
+
+nav ul{
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.hero h1{
+    font-size:3rem;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<nav>
+
+<div class="logo">
+Amenawon Wilson Iyegbe
+</div>
+
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="problem solving.html">Problem Solving</a></li>
+<li><a href="skills.html">Skills</a></li>
+<li><a href="showcase.html">Showcase</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+
+</nav>
+
+</header>
+
+<!-- HERO -->
+
+<section class="hero">
+
+<h1>Portfolio Showcase</h1>
+
+<p>
+Welcome to my showcase page. This section highlights key projects, skills,
+experiences, and achievements that demonstrate my personal and professional
+development throughout my university journey. My studies have helped me
+develop a strong interest in business consulting, strategic problem solving,
+leadership, and organisational improvement.
+
+This showcase provides insight into how I have applied theoretical knowledge
+to realistic business scenarios while continuously developing transferable
+skills that are valuable in professional environments. It also reflects my
+commitment to continuous learning and my ambition to build a successful
+career within the business consulting industry.
+</p>
+
+</section>
+
+<!-- DEVELOPMENT JOURNEY -->
+
+<section>
+
+<h2 class="section-title">
+My Professional Development Journey
+</h2>
+
+<div class="card">
+
+<p>
+Since beginning my undergraduate studies at Salford Business School,
+I have actively worked on developing both academic knowledge and
+professional capabilities. Throughout my studies, I have strengthened
+my analytical thinking, communication skills, teamwork abilities,
+research methods, and understanding of business operations.
+
+Various projects and assignments have provided opportunities to examine
+real-world business challenges and identify practical solutions. These
+experiences have encouraged me to think critically about how organisations
+operate and how strategic recommendations can support long-term success.
+
+My development journey has reinforced my goal of working within Business
+Consulting, an industry that aligns with my interests in strategy,
+problem solving, organisational performance, and continuous improvement.
+</p>
+
+</div>
+
+</section>
+
+<!-- FEATURED PROJECT -->
+
+<section>
+
+<h2 class="section-title">
+Featured Business Project
+</h2>
+
+<div class="card">
+
+<h3>Firestone Pizza Co. Business Strategy Project</h3>
+
+<p>
+The Firestone Pizza Co. project was created as a realistic business case study
+to demonstrate business analysis, strategic thinking, customer engagement,
+and operational planning. The project focused on examining the challenges
+faced by a modern pizza business operating within a highly competitive market.
+
+The project explored areas including business operations, customer
+satisfaction, service quality, marketing opportunities, growth strategies,
+and digital innovation. Through detailed analysis, several recommendations
+were developed to improve business performance, efficiency, and customer
+engagement.
+
+One of the key outcomes of the project was the development of interactive
+website features such as a booking system and customer feedback platform.
+These elements highlighted how digital technologies can improve customer
+experience while supporting operational efficiency and business growth.
+</p>
+
+</a>
+
+</div>
+
+</section>
+
+<!-- SKILLS -->
+
+<section>
+
+<h2 class="section-title">
+Skills Demonstrated
+</h2>
+
+<div class="grid">
+
+<div class="card">
+
+<h3>Problem Solving</h3>
+
+<p>
+Problem solving has been a recurring element throughout my studies and
+projects. I have developed the ability to identify challenges, evaluate
+available information, and propose practical solutions. This skill was
+particularly demonstrated through the Firestone Pizza Co. project, where
+business issues were analysed and addressed through strategic recommendations.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>Business Analysis</h3>
+
+<p>
+Through coursework and independent learning, I have gained experience
+analysing business environments, understanding organisational challenges,
+and assessing opportunities for development. I enjoy exploring how
+businesses can improve performance through evidence-based decision making.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>Communication</h3>
+
+<p>
+Effective communication is a skill I have strengthened through report
+writing, presentations, group discussions, and portfolio development.
+I understand the importance of presenting information clearly,
+professionally, and confidently to different audiences.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>Teamwork</h3>
+
+<p>
+Working collaboratively has been an important part of university life.
+Group projects have helped me improve my ability to communicate with
+others, support team objectives, and contribute towards successful
+outcomes in shared working environments.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- CAREER -->
+
+<section>
+
+<h2 class="section-title">
+Career Aspirations
+</h2>
+
+<div class="card">
+
+<p>
+My long-term ambition is to establish a successful career within the Business
+Consulting sector. I am particularly interested in helping organisations
+identify challenges, improve performance, develop strategic solutions,
+and achieve long-term growth objectives.
+
+Consulting appeals to me because it combines analytical thinking,
+problem solving, communication, and strategic decision making. The
+opportunity to work with different organisations and contribute to
+meaningful change makes it an exciting and rewarding career path.
+
+As I continue my studies and gain further experience, I aim to develop
+the skills, knowledge, and professional confidence required to succeed
+within the consulting industry.
+</p>
+
+</div>
+
+</section>
+
+<!-- ACHIEVEMENTS -->
+
+<section>
+
+<h2 class="section-title">
+Key Achievements & Accomplishments
+</h2>
+
+<div class="grid">
+
+<div class="card">
+
+<h3>Academic Development</h3>
+
+<p>
+Continuously building knowledge in business management, leadership,
+strategy, and professional practice through higher education.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>Portfolio Website Development</h3>
+
+<p>
+Designed and developed a professional multi-page digital portfolio that
+showcases projects, career goals, skills, achievements, and business case studies.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>Business Strategy Project</h3>
+
+<p>
+Successfully developed the Firestone Pizza Co. case study, demonstrating
+business analysis, strategic planning, customer engagement, and web
+development capabilities.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- FUTURE -->
+
+<section>
+
+<h2 class="section-title">
+Future Projects & Development
+</h2>
+
+<div class="grid">
+
+<div class="card">
+
+<h3>Business Consultancy Projects</h3>
+
+<p>
+Future work will include consultancy style projects focused on analysing
+organisational challenges and producing strategic recommendations.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>Data Analytics</h3>
+
+<p>
+I plan to develop projects that utilise data analysis techniques to support
+business decision making and improve organisational performance.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>Professional Experience</h3>
+
+<p>
+This portfolio will continue to expand with internships, placements,
+employment experiences, and professional achievements.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- REFLECTION -->
+
+<section>
+
+<h2 class="section-title">
+Reflection
+</h2>
+
+<div class="card">
+
+<p>
+Developing this portfolio has provided an opportunity to reflect on my
+growth, achievements, and future ambitions. It has enabled me to combine
+different aspects of my academic journey while demonstrating practical
+skills that can be transferred into professional environments.
+
+The process of building this portfolio has strengthened my confidence,
+enhanced my technical capabilities, and encouraged me to think more
+critically about my future career direction. As I continue to gain
+experience and complete new projects, this portfolio will evolve and
+serve as an ongoing record of my development towards becoming a
+Business Consultant.
+</p>
+
+</div>
+
+</section>
+
+<!-- LINKS -->
+
+<section>
+
+<h2 class="section-title">
+Explore My Portfolio
+</h2>
+
+<div class="button-group">
+
+<a href="index.html" class="btn">
+Homepage
+</a>
+
+<a href="problem-solving.html" class="btn">
+Problem Solving
+</a>
+
+<a href="contact.html" class="btn">
+Contact Me
+</a>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>
+© 2026 Amenawon Wilson Iyegbe | Digital Portfolio Showcase
+</p>
+
+</footer>
+
+</body>
+</html>

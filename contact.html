@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Contact | Amenawon Wilson Iyegbe</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:
+    radial-gradient(circle at top left,#2563eb 0%,transparent 30%),
+    radial-gradient(circle at bottom right,#06b6d4 0%,transparent 30%),
+    linear-gradient(135deg,#020617,#0f172a,#1e293b);
+
+    color:white;
+    min-height:100vh;
+    overflow-x:hidden;
+}
+
+/* Background Effects */
+
+body::before,
+body::after{
+    content:'';
+    position:fixed;
+    border-radius:50%;
+    filter:blur(120px);
+    z-index:-1;
+}
+
+body::before{
+    width:400px;
+    height:400px;
+    background:#2563eb;
+    top:-100px;
+    left:-100px;
+}
+
+body::after{
+    width:350px;
+    height:350px;
+    background:#06b6d4;
+    bottom:-100px;
+    right:-100px;
+}
+
+/* Navigation */
+
+header{
+    position:sticky;
+    top:0;
+    z-index:1000;
+
+    background:rgba(15,23,42,.85);
+
+    backdrop-filter:blur(12px);
+
+    border-bottom:1px solid rgba(255,255,255,.1);
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+}
+
+.logo{
+    font-size:1.4rem;
+    font-weight:700;
+    color:#60a5fa;
+}
+
+nav ul{
+    display:flex;
+    gap:25px;
+    list-style:none;
+}
+
+nav a{
+    text-decoration:none;
+    color:white;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#60a5fa;
+}
+
+/* Hero */
+
+.hero{
+    text-align:center;
+    padding:100px 10% 50px;
+}
+
+.hero h1{
+    font-size:4rem;
+
+    background:linear-gradient(
+        to right,
+        #60a5fa,
+        #22d3ee
+    );
+
+    -webkit-background-clip:text;
+    background-clip:text;
+    -webkit-text-fill-color:transparent;
+
+    margin-bottom:20px;
+}
+
+.hero p{
+    max-width:800px;
+    margin:auto;
+    color:#dbeafe;
+    line-height:1.8;
+}
+
+/* Layout */
+
+.container{
+    max-width:1200px;
+    margin:auto;
+    padding:0 10% 80px;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:30px;
+}
+
+.card{
+    background:rgba(255,255,255,.08);
+
+    backdrop-filter:blur(15px);
+
+    border:1px solid rgba(255,255,255,.1);
+
+    border-radius:20px;
+
+    padding:30px;
+}
+
+.card h2{
+    color:#60a5fa;
+    margin-bottom:20px;
+}
+
+.card p{
+    color:#dbeafe;
+    line-height:1.8;
+}
+
+/* Form */
+
+input,
+textarea{
+
+    width:100%;
+
+    padding:14px;
+
+    margin-top:8px;
+
+    background:rgba(255,255,255,.08);
+
+    border:1px solid rgba(255,255,255,.15);
+
+    border-radius:10px;
+
+    color:white;
+
+    outline:none;
+}
+
+textarea{
+    resize:none;
+}
+
+input:focus,
+textarea:focus{
+    border:1px solid #60a5fa;
+}
+
+.btn{
+    margin-top:20px;
+
+    padding:14px 30px;
+
+    border:none;
+
+    border-radius:50px;
+
+    background:linear-gradient(
+    90deg,
+    #2563eb,
+    #06b6d4);
+
+    color:white;
+
+    cursor:pointer;
+
+    font-weight:600;
+}
+
+.btn:hover{
+    transform:translateY(-2px);
+}
+
+.success{
+    color:#60a5fa;
+    margin-top:15px;
+    display:none;
+    font-weight:600;
+}
+
+/* Footer */
+
+footer{
+    text-align:center;
+    padding:30px;
+
+    border-top:1px solid rgba(255,255,255,.1);
+
+    color:#cbd5e1;
+}
+
+@media(max-width:768px){
+
+.grid{
+grid-template-columns:1fr;
+}
+
+.hero h1{
+font-size:3rem;
+}
+
+}
+
+</style>
+</head>
+<body>
+
+<header>
+
+<nav>
+
+<div class="logo">
+Amenawon Wilson Iyegbe
+</div>
+
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="problem solving.html">Problem Solving
+</a></li>
+<li><a href="skills.html">Skills</a></li>
+<li><a href="showcase.html">Showcase</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+
+</nav>
+
+</header>
+
+<section class="hero">
+
+<h1>Get In Touch</h1>
+
+<p>
+Thank you for visiting my digital portfolio. Whether you would like to discuss
+career opportunities, collaborate on projects, or simply connect professionally,
+I would be happy to hear from you.
+</p>
+
+</section>
+
+<div class="container">
+
+<div class="grid">
+
+<!-- Contact Information -->
+
+<div class="card">
+
+<h2>Contact Information</h2>
+
+<p>
+<strong>Name:</strong><br>
+Amenawon Wilson Iyegbe
+</p>
+
+<br>
+
+<p>
+<strong>Email:</strong><br>
+ameniyegbe32@gmail.com
+</p>
+
+<br>
+
+<p>
+<strong>Location:</strong><br>
+Salford, Greater Manchester, United Kingdom
+</p>
+
+<br>
+
+<p>
+<strong>LinkedIn:</strong><br>
+linkedin.com/in/amenawon-iyegbe-845921444
+</p>
+
+<br>
+
+<p>
+Feel free to reach out regarding graduate opportunities,
+business consulting roles, networking, academic collaborations,
+or professional development discussions.
+</p>
+
+</div>
+
+<!-- Contact Form -->
+
+<div class="card">
+
+<h2>Send a Message</h2>
+
+<form id="contactForm">
+
+<label>Full Name</label>
+<input
+type="text"
+placeholder="Enter your name"
+required>
+
+<br><br>
+
+<label>Email Address</label>
+<input
+type="email"
+placeholder="Enter your email"
+required>
+
+<br><br>
+
+<label>Subject</label>
+<input
+type="text"
+placeholder="Message subject"
+required>
+
+<br><br>
+
+<label>Message</label>
+<textarea
+rows="6"
+placeholder="Type your message here..."
+required></textarea>
+
+<button type="submit" class="btn">
+Send Message
+</button>
+
+<div
+id="successMessage"
+class="success">
+
+✅ Thank you, your message has been submitted successfully.
+
+</div>
+
+</form>
+
+</div>
+
+</div>
+
+</div>
+
+<footer>
+
+<p>
+© 2026 Amenawon Wilson Iyegbe | Digital Portfolio
+</p>
+
+</footer>
+
+<script>
+
+document
+.getElementById("contactForm")
+.addEventListener("submit",function(e){
+
+e.preventDefault();
+
+document
+.getElementById("successMessage")
+.style.display="block";
+
+this.reset();
+
+});
+
+</script>
+
+</body>
+</html>

@@ -1,16 +1,830 @@
-<http://htmlpreview.github.io/? add before html>
-</https:>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>Skills</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Amenawon Wilson Iyegbe | Digital Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+background:
+radial-gradient(circle at top left,#2563eb 0%,transparent 30%),
+radial-gradient(circle at bottom right,#06b6d4 0%,transparent 30%),
+linear-gradient(135deg,#020617,#0f172a,#1e293b);
+color:white;
+overflow-x:hidden;
+}
+
+/* Background glow */
+
+body::before,
+body::after{
+content:'';
+position:fixed;
+border-radius:50%;
+filter:blur(120px);
+z-index:-1;
+}
+
+body::before{
+width:400px;
+height:400px;
+background:#2563eb;
+top:-100px;
+left:-100px;
+}
+
+body::after{
+width:350px;
+height:350px;
+background:#06b6d4;
+bottom:-100px;
+right:-100px;
+}
+
+/* Navigation */
+
+header{
+position:fixed;
+width:100%;
+background:rgba(15,23,42,0.85);
+backdrop-filter:blur(12px);
+padding:1rem 8%;
+z-index:1000;
+border-bottom:1px solid rgba(255,255,255,0.1);
+}
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.logo{
+font-size:1.4rem;
+font-weight:700;
+color:#60a5fa;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:25px;
+flex-wrap:wrap;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+transition:.3s;
+}
+
+nav a:hover{
+color:#60a5fa;
+}
+
+/* Hero */
+
+.hero{
+min-height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+padding:120px 10%;
+}
+
+.hero-content{
+max-width:900px;
+}
+
+.hero h1{
+font-size:4rem;
+background:linear-gradient(to right,#60a5fa,#22d3ee);
+background-clip:text;
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+margin-bottom:20px;
+}
+
+.hero h2{
+margin-bottom:20px;
+font-weight:400;
+color:#cbd5e1;
+}
+
+.hero p{
+font-size:1.2rem;
+line-height:1.8;
+color:#dbeafe;
+}
+
+.hero-image{
+width:220px;
+height:220px;
+border-radius:50%;
+border:5px solid #60a5fa;
+margin:30px auto;
+display:block;
+object-fit:cover;
+box-shadow:0 0 40px rgba(96,165,250,.6);
+}
+
+.btn{
+display:inline-block;
+padding:15px 35px;
+background:linear-gradient(90deg,#2563eb,#06b6d4);
+color:white;
+text-decoration:none;
+border-radius:50px;
+margin-top:30px;
+font-weight:600;
+transition:.3s;
+}
+
+.btn:hover{
+transform:translateY(-5px);
+box-shadow:0 10px 30px rgba(37,99,235,.4);
+}
+
+/* Sections */
+
+section{
+padding:90px 10%;
+}
+
+.section-title{
+text-align:center;
+font-size:2.5rem;
+margin-bottom:50px;
+}
+
+/* Cards */
+
+.card{
+background:rgba(255,255,255,0.08);
+backdrop-filter:blur(16px);
+padding:30px;
+border-radius:20px;
+border:1px solid rgba(255,255,255,0.12);
+transition:.4s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+box-shadow:0 20px 40px rgba(0,0,0,.25);
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+}
+
+.card h3{
+color:#60a5fa;
+margin-bottom:15px;
+}
+
+.card p{
+color:#dbeafe;
+}
+
+/* Contact */
+
+.contact-links{
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+margin-top:20px;
+}
+
+/* Footer */
+
+footer{
+padding:30px;
+text-align:center;
+border-top:1px solid rgba(255,255,255,0.08);
+color:#cbd5e1;
+}
+
+</style>
 </head>
+
 <body>
-    <h1>My Skills</h1>
-    <ul>
-        <li><a href="Skills.html">Skills</a></li>
-        <li><a href="showcase.html">Showcase</a></li>
-        <li><a href="problem solving.html">Problem Solving</a></li>
-        <li><a href="contact.html">Contact</a></li>
-    </ul>
+
+<header>
+<nav>
+<div class="logo">Amenawon Wilson Iyegbe</div>
+
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="problem solving.html">Problem Solving
+</a></li>
+<li><a href="skills.html">Skills</a></li>
+<li><a href="showcase.html">Showcase</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+</header>
+
+<!-- HERO -->
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h1>Amenawon Wilson Iyegbe</h1>
+
+<h2>Business Information Technology Student</h2>
+
+<p>
+Welcome to my digital portfolio. I am an ambitious undergraduate focused on
+developing the analytical, leadership, and communication skills required for
+a successful career in business consulting. This website highlights my
+academic journey, professional interests, achievements, and future career
+aspirations.
+</p>
+
+<a href="#about" class="btn">Explore My Portfolio</a>
+
+</div>
+</section>
+
+<!-- ABOUT -->
+
+<section id="about">
+
+<h2 class="section-title">About Me</h2>
+
+<div class="card">
+<p>
+I am a motivated student with a strong interest in business, consulting,
+strategy, and professional development. I enjoy solving problems,
+working collaboratively, and continuously expanding my knowledge.
+I believe in lifelong learning and always look for opportunities
+to strengthen my skills and gain meaningful experience.
+</p>
+</div>
+
+</section>
+
+<!-- BACKGROUND -->
+
+<section>
+
+<h2 class="section-title">My Background</h2>
+
+<div class="card">
+<p>
+My academic experiences have provided me with valuable knowledge of business
+operations, teamwork, professional communication, and organisational
+decision-making. Through coursework, independent learning, and practical
+activities, I have developed a strong foundation that supports my ambition
+to pursue a consulting career.
+</p>
+</div>
+
+</section>
+
+<!-- EDUCATION -->
+
+<section id="education">
+
+<h2 class="section-title">Education</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>University Studies</h3>
+<p>
+Currently pursuing my undergraduate degree while building knowledge
+across business, management, and professional practice.
+</p>
+</div>
+
+<div class="card">
+<h3>Continuous Learning</h3>
+<p>
+Regularly engaging with online learning, industry insights,
+and career development resources.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- PROFESSIONAL INTERESTS -->
+
+<section>
+
+<h2 class="section-title">Professional Interests</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Business Consulting</h3>
+<p>Helping organisations solve business challenges and improve performance.</p>
+</div>
+
+<div class="card">
+<h3>Business Strategy</h3>
+<p>Understanding how organisations achieve long-term growth and success.</p>
+</div>
+
+<div class="card">
+<h3>Data & Analytics</h3>
+<p>Using information and data-driven insights to support decision-making.</p>
+</div>
+
+<div class="card">
+<h3>Leadership Development</h3>
+<p>Exploring leadership approaches that inspire high-performing teams.</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- SKILLS -->
+
+<section id="skills">
+
+<h2 class="section-title">Key Skills</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Problem Solving</h3>
+<p>Identifying challenges and developing practical solutions.</p>
+</div>
+
+<div class="card">
+<h3>Communication</h3>
+<p>Presenting ideas clearly both verbally and in writing.</p>
+</div>
+
+<div class="card">
+<h3>Teamwork</h3>
+<p>Working effectively with others to achieve shared goals.</p>
+</div>
+
+<div class="card">
+<h3>Analytical Thinking</h3>
+<p>Evaluating information and making evidence-based decisions.</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- CAREER GOALS -->
+
+<section>
+
+<h2 class="section-title">Career Goals</h2>
+
+<div class="card">
+
+<p>
+My long-term ambition is to build a successful career within
+<strong>Business Consulting</strong>. I am actively working towards this goal by
+strengthening my analytical thinking, communication skills, and business
+knowledge while gaining experience that will prepare me to advise
+organisations on strategy, performance improvement, and sustainable growth.
+</p>
+
+</div>
+
+</section>
+
+<!-- ACHIEVEMENTS -->
+
+<section>
+
+<h2 class="section-title">Achievements</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Academic Development</h3>
+<p>Building strong business and professional knowledge through university study.</p>
+</div>
+
+<div class="card">
+<h3>Professional Growth</h3>
+<p>Continuously developing employability and leadership skills.</p>
+</div>
+
+<div class="card">
+<h3>Collaboration</h3>
+<p>Successfully contributing to group projects and team activities.</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- PROJECTS -->
+
+<section id="projects">
+
+<h2 class="section-title">Projects</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>University Projects</h3>
+<p>
+Examples of coursework, research, presentations, and business-related
+projects will be showcased here.
+</p>
+</div>
+
+<div class="card">
+<h3>Future Case Studies</h3>
+<p>
+A space dedicated to business analysis and consulting-related work
+as my portfolio continues to grow.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- PURPOSE -->
+
+<section>
+
+<h2 class="section-title">Purpose of This Portfolio</h2>
+
+<div class="card">
+<p>
+This portfolio acts as a professional showcase of my development,
+achievements, skills, and career aspirations. It provides an overview
+of my journey so far and will continue to evolve as I gain new
+experiences, complete projects, and work towards a career in
+business consulting.
+</p>
+</div>
+
+</section>
+
+<!-- CONTACT -->
+
+<section id="contact">
+
+<h2 class="section-title">Connect With Me</h2>
+
+<div class="card" style="text-align:center;">
+
+<p>
+Thank you for visiting my portfolio. Feel free to connect with me
+or explore my professional profiles.
+</p>
+
+<div class="contact-links">
+
+<a href="https://linkedin.com/in/amenawon-iyegbe-845921444" target="_blank" class="btn">
+LinkedIn
+</a>
+
+<a href="mailto:A.W.Iyegbe@edu.salford.ac.uk" target="_blank" class="btn">
+Email
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+<p>© 2026 Amenawon Wilson Iyegbe | Digital Portfolio</p>
+</footer>
+
 </body>
-</html>
+<!-- COOKIE CONSENT BANNER -->
+
+<div id="cookieBanner" class="cookie-banner">
+
+    <div class="cookie-content">
+
+        <div class="cookie-text">
+
+            <p>
+                This digital portfolio, created by
+                <strong>Amenawon Wilson Iyegbe</strong>,
+                uses cookies to improve website functionality and visitor experience.
+                By selecting <strong>Accept All Cookies</strong>, you consent to the use of
+                functional and analytics cookies.
+
+                <a href="#">Cookie Policy</a>
+            </p>
+
+        </div>
+
+        <div class="cookie-buttons">
+
+            <button
+            id="cookieSettings"
+            class="cookie-settings">
+
+            Cookie Settings
+
+            </button>
+
+            <button
+            id="rejectCookies"
+            class="cookie-reject">
+
+            Reject All
+
+            </button>
+
+            <button
+            id="acceptCookies"
+            class="cookie-accept">
+
+            Accept All Cookies
+
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<style>
+
+/* =========================
+   COOKIE BANNER
+========================= */
+
+.cookie-banner{
+
+    position:fixed;
+
+    bottom:0;
+    left:0;
+
+    width:100%;
+
+    background:rgba(15,23,42,0.97);
+
+    backdrop-filter:blur(15px);
+
+    border-top:1px solid rgba(255,255,255,0.1);
+
+    padding:20px;
+
+    z-index:9999;
+
+    animation:slideUp .5s ease;
+}
+
+@keyframes slideUp{
+
+    from{
+        transform:translateY(100%);
+    }
+
+    to{
+        transform:translateY(0);
+    }
+}
+
+.cookie-content{
+
+    max-width:1400px;
+
+    margin:auto;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:30px;
+
+    flex-wrap:wrap;
+}
+
+.cookie-text{
+
+    flex:1;
+}
+
+.cookie-text p{
+
+    color:#dbeafe;
+
+    line-height:1.7;
+
+    font-size:0.95rem;
+}
+
+.cookie-text a{
+
+    color:#60a5fa;
+
+    text-decoration:none;
+
+    font-weight:600;
+}
+
+.cookie-text a:hover{
+
+    text-decoration:underline;
+}
+
+.cookie-buttons{
+
+    display:flex;
+
+    gap:15px;
+
+    flex-wrap:wrap;
+}
+
+.cookie-settings{
+
+    background:none;
+
+    border:none;
+
+    color:#60a5fa;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.cookie-settings:hover{
+
+    color:#22d3ee;
+}
+
+.cookie-reject{
+
+    padding:12px 24px;
+
+    border:none;
+
+    border-radius:8px;
+
+    background:#334155;
+
+    color:white;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.cookie-reject:hover{
+
+    background:#475569;
+
+    transform:translateY(-2px);
+}
+
+.cookie-accept{
+
+    padding:12px 24px;
+
+    border:none;
+
+    border-radius:8px;
+
+    background:linear-gradient(
+        90deg,
+        #2563eb,
+        #06b6d4
+    );
+
+    color:white;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.cookie-accept:hover{
+
+    transform:translateY(-2px);
+
+    box-shadow:0 10px 20px rgba(37,99,235,.4);
+}
+
+@media(max-width:768px){
+
+.cookie-content{
+
+    flex-direction:column;
+
+    align-items:flex-start;
+}
+
+.cookie-buttons{
+
+    width:100%;
+}
+
+}
+
+</style>
+
+<script>
+
+// Hide banner if user already selected an option
+
+if(localStorage.getItem("portfolioCookies")){
+
+    document.getElementById("cookieBanner").style.display = "none";
+
+}
+
+// Accept All
+
+document.getElementById(
+"acceptCookies"
+).addEventListener("click", function(){
+
+    localStorage.setItem(
+    "portfolioCookies",
+    "accepted"
+    );
+
+    document.getElementById(
+    "cookieBanner"
+    ).style.display = "none";
+
+});
+
+// Reject All
+
+document.getElementById(
+"rejectCookies"
+).addEventListener("click", function(){
+
+    localStorage.setItem(
+    "portfolioCookies",
+    "rejected"
+    );
+
+    document.getElementById(
+    "cookieBanner"
+    ).style.display = "none";
+
+});
+
+// Cookie Settings
+
+document.getElementById(
+"cookieSettings"
+).addEventListener("click", function(){
+
+alert(
+
+"Cookie Settings\n\n" +
+
+"Essential Cookies: Enabled\n\n" +
+
+"Analytics Cookies: Used to understand how visitors interact with this portfolio.\n\n" +
+
+"Marketing Cookies: Not used on this website.\n\n" +
+
+"This portfolio only uses cookies to enhance user experience."
+
+);
+
+});
+
+</script>
+</body>
